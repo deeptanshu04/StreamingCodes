@@ -10,3 +10,4 @@ Brief Description of Files:
 6. check_valid_streaming : Check if a particular generator matrix belongs to a valid streaming code. can also check for valid burst erasure correcting codes by setting only_burst input to 1.
 7. simulate_all_fast: Simulate the different codes and outputs an array of packet loss rates. 
 8. final_script_fast: To run simulate_all_fast for multiple epsilons. 
+9. mat files: Generator matrices for construction A and Random Code (Fong et al.) used in our simulation. 
