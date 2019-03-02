@@ -11,3 +11,6 @@ Brief Description of Files:
 7. simulate_all_fast: Simulate the different codes and outputs an array of packet loss rates. Contains functions to check if a codeword can be successfully decode. 
 8. final_script_fast: To run simulate_all_fast for multiple epsilons. 
 9. mat files: Generator matrices for construction A and Random Code (Fong et al.) used in our simulation. 
+10. sw_erasure: Check if an erasure pattern is a valid sliding window erasure pattern. 
+11. fritchman_uncoded_error: Theoretical value of packet loss rate expected of the Fritchman channel under no coding.
+
