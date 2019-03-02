@@ -14,7 +14,7 @@ load('G_fk_11_8_4')
 G_c = construction_c;
 
 % MDS code
-m_mds = 4; %Filed size for MDS code
+m_mds = 4; %Field size for MDS code
 P = cauchygen(a_mds,a_mds,m_mds);
 I_mat = gf(eye(a_mds),m_mds);
 G_mds = [I_mat P];
