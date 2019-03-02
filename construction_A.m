@@ -1,6 +1,5 @@
 %function [G,H] = construction_A(t,b,a)
 
-%t = 7; b=6; a=2;
 t=11;b=8; a=4;
 m = ceil(log2(t+1)); 
 del = b-a;
@@ -17,7 +16,7 @@ F_q = [gf(0,2*m);roots(gfpoly)] % all non-zero elements of F_q roots of X^q = X.
 
 
 l_q=length(F_q); % should be 2^q
-non_fq = setdiff(1:2^(2*m)-1,F_q.x);
+non_fq = setdiff(1:2^(2*m)-1,F_q.x); %Select an element not from F_q. 
 
 H= gf(zeros(b,n),2*m);
 
@@ -54,14 +53,10 @@ while (valid_assignment == 0)
         P_l = H(1:b,l:(l+b-1));
         det_P_l = det(P_l);
         
-        if (det(P_l)==gf(0,2*m))
-            disp('ZEROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO')
-        end
         valid_assignment = valid_assignment & (det_P_l~= gf(0,2*m));
     end
 end  
-%H
-%H1 = H(:,n-b+1:n)^-1
+
 H_PI = H(:,n-b+1:n)^(-1)*H;
 P = H_PI(:,1:n-b);
 G = [eye(k)*gf(1,2*m) -P'];
