@@ -1,5 +1,5 @@
 # StreamingCodes
-Matlab Code to simulate packet loss rates of various streaming codes
+Matlab Code to simulate packet loss rates of various streaming codes. Refer to the paper *Low Field-size, Rate-Optimal Streaming Codes for Channels with Burst and Random Erasures* for more details. 
 
 ### Brief Description of Files:
 1. construction_A, construction_C, construction_fong_khisti : Output generator matrices for these 3 constructions.
