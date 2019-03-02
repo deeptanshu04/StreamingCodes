@@ -11,9 +11,5 @@ else
         for j=1:b
             c(i,j)=(y_i(i)-x_i(j))^-1;
         end
-        %c(i,:)=c(i,:)*(y_i(i)-x_i(1));
     end
-    % for i=1:a
-    %     c(i,:)=c(1,:).^-1.*c(i,:);
-    % end
 end
