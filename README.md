@@ -8,6 +8,6 @@ Brief Description of Files:
 4. gen_burst_pattern : all burst erasure patterns of a length b within a window t.
 5. gen_k_sets: all sequenece of length n containing k 1s and rest 0s. To model random erasures.
 6. check_valid_streaming : Check if a particular generator matrix belongs to a valid streaming code. can also check for valid burst erasure correcting codes by setting only_burst input to 1.
-7. simulate_all_fast: Simulate the different codes and outputs an array of packet loss rates. 
+7. simulate_all_fast: Simulate the different codes and outputs an array of packet loss rates. Contains functions to check if a codeword can be successfully decode. 
 8. final_script_fast: To run simulate_all_fast for multiple epsilons. 
 9. mat files: Generator matrices for construction A and Random Code (Fong et al.) used in our simulation. 
