@@ -1,7 +1,7 @@
 # StreamingCodes
 Matlab Code to simulate packet loss rates of various streaming codes
 
-Brief Description of Files:
+###Brief Description of Files:
 1. construction_A, construction_C, construction_fong_khisti : Output generator matrices for these 3 constructions.
 2. Fritchman_sim, GE_sim : Simulate one channel use of Fritchman and GE channels. Return next channel state and erasure/no erasure. 
 3. cauchygen: outputs a Cauchy matrix of size a x b over a field of size 2^m .
