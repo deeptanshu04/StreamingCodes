@@ -1,6 +1,7 @@
-%function [G,H] = construction_A(t,b,a)
+function [G,H] = construction_A(t,b,a)
 
-t=11;b=8; a=4;
+%t=11;b=8; a=4;
+rng(10);
 m = ceil(log2(t+1)); 
 del = b-a;
 k = t+1-a;
@@ -60,4 +61,4 @@ end
 H_PI = H(:,n-b+1:n)^(-1)*H;
 P = H_PI(:,1:n-b);
 G = [eye(k)*gf(1,2*m) -P'];
-%end
+end
