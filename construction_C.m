@@ -1,7 +1,7 @@
-function G_c = construction_c()
-t=11;b=8; a=4;
+function G_c = construction_C(t,b,a)
 
-%t = 7; b=6; a=2;
+%t=11;b=8; a=4;
+
 del = b-a;
 k = t+1-a;
 n = t+1+del; 
