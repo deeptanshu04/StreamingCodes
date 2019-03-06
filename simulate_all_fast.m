@@ -11,7 +11,7 @@ n_mds = 12; a_mds = 6;
 G = construction_A(t,b,a); %load('G_fk_11_8_4')
 G_fk = construction_fong_khisti(t,b,a);
 %For t=b, Martinian trott is just repetition
-G_c = construction_c(t,b,a);
+G_c = construction_C(t,b,a);
 
 % MDS code
 m_mds = 4; %Field size for MDS code
