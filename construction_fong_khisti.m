@@ -1,10 +1,7 @@
-function [G_fk] = construction_fong_khisti
+function [G_fk] = construction_fong_khisti(t,b,a)
 % only for k >= b i.e. codes with rate half- or more
-
-%clc
-
-%t = 7; b=6; a=2;
-t=11;b=8; a=4;
+%t=11;b=8; a=4;
+rng(10)
 
 del = b-a;
 k = t+1-a;
